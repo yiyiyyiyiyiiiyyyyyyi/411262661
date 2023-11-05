@@ -2,58 +2,59 @@
 <html>
   <body>
     <main>
-      <h1>Rap Legends</h1>
+      <h1>NBA Legends</h1>
       <section>
-        <h2>Top Rap Moments</h2>
-        <!-- TODO: Add link to rap artist photos -->
-        <p>Witness more <a target="_blank" href="https://raplegends.com">epic rap moments</a> in our gallery.</p>
-        <a href="https://raplegends.com"><img src="https://images5.alphacoders.com/869/thumb-1920-869330.jpg" alt="A dynamic rap performance in action."></a>
+        <h2>Top NBA Moments</h2>
+        <p>Witness more <a target="_blank" href="https://nba.com">epic NBA moments</a> in our gallery.</p>
+        <a href="https://nba.com"><img src="https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/1139B/production/_110655507_kb.jpg" alt="A dynamic NBA game in action."></a>
       </section>
       <section>
-        <h2>Rap Icons</h2>
-        <h3>Legendary rap artists:</h3>
+        <h2>NBA Icons</h2>
+        <h3>Legendary NBA players:</h3>
         <ul>
-          <li>Eminem</li>
-          <li>Tupac Shakur</li>
-          <li>Notorious B.I.G.</li>
+          <li>Michael Jordan</li>
+          <li>LeBron James</li>
+          <li>Kobe Bryant</li>
         </ul>
-        <figure>
-          <img src="https://pic2.zhimg.com/2ddf09098a95f4cf9b8bbd2fa393bea8_r.jpg?source=1940ef5c">
-          <figcaption>Celebrating the rap icons.</figcaption>
-        </figure>
-        <h3>Top Rap Groups:</h3>
-        <ol>
-          <li>Wu-Tang Clan</li>
-          <li>N.W.A</li>
-          <li>Run-D.M.C.</li>
-        </ol>
-        <figure>
-          <img src="https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2019/11/09/0fc2d2af-420d-4e37-8499-f3da5689ed31/wutang2">
-          <figcaption>The power of rap groups.</figcaption>
-        </figure>
+        <button id="add-player">Add Player</button>
       </section>
       <section>
-        <h2>Join the Rap Enthusiasts Community</h2>
-        <form action="https://raplegends.com/submit-rap-photo">
+        <h2>Join the NBA Enthusiasts Community</h2>
+        <form action="https://nba.com/submit-nba-photo">
           <fieldset>
-            <legend>Are you a rap enthusiast?</legend>
+            <legend>Are you an NBA enthusiast?</legend>
             <label><input id="yes" type="radio" name="enthusiast" value="yes"> Yes</label>
             <label><input id="no" type="radio" name="enthusiast" value="no"> No</label>
           </fieldset>
           <fieldset>
-            <legend>Who is your favorite rap artist?</legend>
-            <select name="favorite-artist">
-              <option value="eminem">Eminem</option>
-              <option value="tupac">Tupac Shakur</option>
-              <option value="biggie">Notorious B.I.G.</option>
-              <!-- Add more rap artists here -->
+            <legend>Who is your favorite NBA player?</legend>
+            <select name="favorite-player" id="favorite-player">
+              <option value="jordan">Michael Jordan</option>
+              <option value="lebron">LeBron James</option>
+              <option value="kobe">Kobe Bryant</option>
             </select>
           </fieldset>
-          <input type="text" name="rapphotourl" placeholder="Rap photo URL" required>
+          <input type="text" name="nbaphotourl" placeholder="NBA photo URL" required>
           <button type="submit">Submit</button>
         </form>
       </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#add-player").click(function() {
+          var newPlayerName = prompt("Enter the name of the new player:");
+          if (newPlayerName) {
+            $("ul").append("<li>" + newPlayerName + "</li>");
+          }
+        });
+        $("form").submit(function(event) {
+          event.preventDefault();
+          var selectedPlayer = $("#favorite-player").val();
+          var photoUrl = $("input[name='nbaphotourl']").val();
+          alert("Favorite Player: " + selectedPlayer + "\nNBA Photo URL: " + photoUrl);
+        });
+      });
+    </script>
   </body>
 </html>
-
