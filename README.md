@@ -7,8 +7,12 @@
     <style>
       h2{
         font-size:100px;
-        color:blue;
+        color:white;
       }
+      a{
+        color:orange;
+        font-size:125px;
+        }
     </style>
   </head>
   
