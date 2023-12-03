@@ -4,6 +4,11 @@
   <head>
     <meta charset="utf-8">
     <title>珍稀犬種介紹指南</title>
+    <style>
+      h2{
+        font-size:100px;
+      }
+    </style>
   </head>
   
   <body bgcolor="#FBE0C3">
