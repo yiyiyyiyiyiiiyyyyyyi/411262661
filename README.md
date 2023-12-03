@@ -7,6 +7,7 @@
     <style>
       h2{
         font-size:100px;
+        color:blue;
       }
     </style>
   </head>
