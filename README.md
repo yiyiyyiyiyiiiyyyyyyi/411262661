@@ -11,7 +11,7 @@
       }
       a{
         color:orange;
-        font-size:50px;
+        font-size:20px;
         }
     </style>
   </head>
