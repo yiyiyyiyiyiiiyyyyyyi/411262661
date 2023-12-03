@@ -1,3 +1,6 @@
+
+
+User
 <!DOCTYPE html>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <html>
@@ -179,100 +182,4 @@
     text-decoration: none;
     color: #645354;
   }
-  <style>
-  /* ... your existing styles ... */
-
-  body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 10px 0;
-    color: white;
-    z-index: 1;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .navbar-section {
-    flex: 1;
-    margin: auto;
-    padding: 10px;
-    border: none;
-  }
-
-  .navbar-section:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transition: 0.3s;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .wel {
-    width: 100%;
-    background-color: #E59A59;
-    margin: 0;
-    padding: 20px 0;
-  }
-
-  .introduce,
-  .interest {
-    width: 90%;
-    background-color: #FFBB98;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 700px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .con {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 700px;
-    text-align: left;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  h1,
-  h2,
-  h3,
-  h5,
-  .space,
-  .space2,
-  .con,
-  .button,
-  .top,
-  .intro,
-  .navbar,
-  p {
-    text-align: center;
-  }
-
-  hr {
-    height: 2px;
-    background-color: #7D8E95;
-    border-color: #7D8E95;
-    margin: 20px 0;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
 </style>
-
-</style>
-
